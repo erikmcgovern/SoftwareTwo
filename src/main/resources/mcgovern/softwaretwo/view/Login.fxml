@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="285.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mcgovern.softwaretwo.controller.LoginController">
+   <children>
+      <AnchorPane layoutX="36.0" layoutY="51.0" prefHeight="163.0" prefWidth="372.0">
+         <children>
+            <Label fx:id="usernameTxt" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-12.0" layoutY="44.0" prefHeight="24.0" prefWidth="110.0" text="Username" textAlignment="CENTER" />
+            <Label fx:id="passwordTxt" alignment="CENTER_RIGHT" layoutX="7.0" layoutY="91.0" prefHeight="17.0" prefWidth="91.0" text="Password" />
+            <TextField fx:id="usernameText" layoutX="112.0" layoutY="43.0" />
+            <TextField fx:id="passwordText" layoutX="112.0" layoutY="87.0" />
+            <Button fx:id="loginButton" layoutX="137.0" layoutY="124.0" mnemonicParsing="false" onAction="#onActionLogin" prefHeight="25.0" prefWidth="98.0" text="Login" />
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="33.0" layoutY="210.0" prefHeight="61.0" prefWidth="378.0">
+         <children>
+            <Label fx:id="timeZoneTxt" alignment="TOP_LEFT" text="Location">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="timeZoneLabel" text="Default" />
+         </children>
+      </HBox>
+      <Label fx:id="loginTxt" alignment="CENTER" layoutX="162.0" layoutY="24.0" prefHeight="27.0" prefWidth="121.0" text="Login" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

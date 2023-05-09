@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="457.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mcgovern.softwaretwo.controller.CustomersController">
+   <children>
+      <Label layoutX="315.0" layoutY="22.0" text="Customers">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="customersTableView" layoutX="27.0" layoutY="70.0" prefHeight="318.0" prefWidth="666.0">
+        <columns>
+          <TableColumn fx:id="customersIdCol" prefWidth="53.0" text="ID" />
+          <TableColumn fx:id="customersNameCol" prefWidth="144.0" text="Name" />
+            <TableColumn fx:id="customersAddressCol" prefWidth="214.0" text="Address" />
+            <TableColumn fx:id="customersPostalCodeCol" prefWidth="83.0" text="Postal Code" />
+            <TableColumn fx:id="customersPhoneNumberCol" prefWidth="100.0" text="Phone Number" />
+            <TableColumn fx:id="customersDivisionIdCol" prefWidth="69.0" text="Division ID" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="395.0" prefHeight="48.0" prefWidth="666.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onActionMainMenu" text="Back" />
+            <Button mnemonicParsing="false" onAction="#onActionDeleteCustomer" text="Delete">
+               <HBox.margin>
+                  <Insets left="433.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onActionModifyCustomer" text="Modify">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onActionAddCustomer" text="Add">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

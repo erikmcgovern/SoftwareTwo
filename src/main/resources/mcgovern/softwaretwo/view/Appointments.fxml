@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="515.0" prefWidth="966.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mcgovern.softwaretwo.controller.AppointmentsController">
+   <children>
+      <Label layoutX="422.0" layoutY="26.0" text="Appointments">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="appointmentsTableView" layoutX="18.0" layoutY="66.0" prefHeight="374.0" prefWidth="931.0">
+        <columns>
+          <TableColumn fx:id="appointmentsIdCol" prefWidth="54.0" text="Appt ID" />
+          <TableColumn fx:id="appointmentsTitleCol" prefWidth="99.0" text="Title" />
+            <TableColumn fx:id="appointmentsDescriptionCol" prefWidth="115.0" text="Description" />
+            <TableColumn fx:id="appointmentsLocationCol" prefWidth="106.0" text="Location" />
+            <TableColumn fx:id="appointmentsContactCol" prefWidth="96.0" text="Contact ID" />
+            <TableColumn fx:id="appointmentsTypeCol" prefWidth="108.0" text="Type" />
+            <TableColumn fx:id="appointmentsStartTimeCol" prefWidth="104.0" text="Start Date/Time" />
+            <TableColumn fx:id="appointmentsEndTimeCol" prefWidth="104.0" text="End Date/Time" />
+            <TableColumn fx:id="appointmentsCustomerIdCol" prefWidth="82.0" text="Customer ID" />
+            <TableColumn fx:id="appointmentsUserIdCol" prefWidth="60.0" text="User ID" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="450.0" prefHeight="51.0" prefWidth="931.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onActionMainMenu" text="Back" />
+            <Button mnemonicParsing="false" onAction="#onActionDeleteAppointment" text="Delete">
+               <HBox.margin>
+                  <Insets left="698.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onActionModifyAppointment" text="Modify">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onActionAddAppointment" text="Add">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="715.0" layoutY="19.0" prefHeight="40.0" prefWidth="202.0">
+         <children>
+            <RadioButton mnemonicParsing="false" onAction="#onActionToggleAll" selected="true" text="All">
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleTimes" />
+               </toggleGroup></RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#onActionToggleMonth" text="Month" toggleGroup="$toggleTimes">
+               <HBox.margin>
+                  <Insets left="25.0" right="25.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#onActionToggleWeek" text="Week" toggleGroup="$toggleTimes" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

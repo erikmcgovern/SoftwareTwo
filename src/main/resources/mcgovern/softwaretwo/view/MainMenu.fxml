@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="382.0" prefWidth="274.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mcgovern.softwaretwo.controller.MainMenuController">
+   <children>
+      <VBox alignment="CENTER" layoutX="62.0" layoutY="7.0" prefHeight="373.0" prefWidth="150.0">
+         <children>
+            <Label text="Home">
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Button maxWidth="120.0" mnemonicParsing="false" onAction="#onActionViewAppointments" text="View Appointments">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Button>
+            <Button maxWidth="120.0" mnemonicParsing="false" onAction="#onActionViewCustomers" text="View Customers">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Button>
+            <Button maxWidth="120.0" mnemonicParsing="false" onAction="#onActionViewReports" text="View Reports">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" onAction="#onActionLogOut" text="Log Out">
+               <VBox.margin>
+                  <Insets top="80.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
