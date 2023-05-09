@@ -10,7 +10,7 @@ The project consists of a scheduling desktop application that has a GUI built wi
 
 - <b>Java</b> 
 - <b>JavaFX</b>
-- <b>MySQL
+- <b>MySQL</b>
 
 <h2>Environments Used </h2>
 
