@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-The project consists of a scheduling desktop application that has a GUI built with JavaFX and a local MySQL database. The user is required to log in and then be sent to the home screen. An alert pops up stating if there is an appointment for the logged-in user within the next 15 minutes or not. The user can then view, add, or edit appointments and customers. There is also a custom report screen.
+The project consists of a scheduling desktop application that has a GUI built with JavaFX and a local MySQL database. The user is required to log in and then is sent to the home screen. An alert pops up stating if there is an appointment for the logged-in user within the next 15 minutes or not. The user can then view, add, or edit appointments and customers. There is also a custom report screen.
 <br />
 
 
